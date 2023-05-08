@@ -53,3 +53,11 @@ const mango = new User({
 });
 mango.changeEmail('newMango@gmail.com');
 console.log(mango);
+
+User.logInfo = function (obj) {
+  console.log(obj);
+};
+
+User.logInfo(mango);
+
+console.dir(User);
