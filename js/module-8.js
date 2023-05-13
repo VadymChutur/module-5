@@ -193,3 +193,15 @@ child.age = 27;
 // console.log(builder.getValue()); // "^.^"
 // builder.padBoth('=');
 // console.log(builder.getValue()); // "=^.^="
+
+class Car {
+  // Change code below this line
+
+  constructor({ brand, model, price }) {
+    this.brand = brand;
+    this.model = model;
+    this.price = price;
+  }
+
+  // Change code above this line
+}
