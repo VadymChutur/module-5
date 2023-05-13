@@ -129,28 +129,67 @@ child.age = 27;
 //   }
 // }
 
-class Storage {
-  constructor([...items]) {
-    this.items = items;
-  }
+// class Storage {
+//   constructor([...items]) {
+//     this.items = items;
+//   }
 
-  getItems() {
-    return this.items;
-  }
+//   getItems() {
+//     return this.items;
+//   }
 
-  addItem(newItem) {
-    return this.items.push(newItem);
-  }
+//   addItem(newItem) {
+//     return this.items.push(newItem);
+//   }
 
-  removeItem(itemToRemove) {
-    return this.items.splice(this.items.indexOf(itemToRemove), 1);
-  }
-}
+//   removeItem(itemToRemove) {
+//     return this.items.splice(this.items.indexOf(itemToRemove), 1);
+//   }
+// }
 
-// Change code above this line
-const storage = new Storage(['Nanitoids', 'Prolonger', 'Antigravitator']);
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
-storage.addItem('Droid');
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
-storage.removeItem('Prolonger');
-console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+// // Change code above this line
+// const storage = new Storage(['Nanitoids', 'Prolonger', 'Antigravitator']);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem('Droid');
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem('Prolonger');
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+// class StringBuilder {
+//   constructor(initialValue) {
+//     this.value = initialValue;
+//     console.log(this.value);
+//   }
+
+//   getValue() {
+//     return this.value;
+//   }
+
+//   padEnd(str) {
+//     console.log(this.value);
+//     this.value = `${this.value}${str}`;
+//     console.log(this.value);
+//     return this.value;
+//   }
+
+//   padStart(str) {
+//     console.log(this.value);
+//     this.value = `${str}${this.value}`;
+//     console.log(this.value);
+//     return this.value;
+//   }
+
+//   padBoth(str) {
+//     this.value = `${str}${this.value}${str}`;
+//     return this.value;
+//   }
+// }
+// // Change code above this line
+// const builder = new StringBuilder('.');
+// console.log(builder.getValue()); // "."
+// builder.padStart('^');
+// console.log(builder.getValue()); // "^."
+// builder.padEnd('^');
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth('=');
+// console.log(builder.getValue()); // "=^.^="
